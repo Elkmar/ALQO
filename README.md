@@ -1,0 +1,2 @@
+# ALQO
+For ALQO masternodes
