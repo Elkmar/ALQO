@@ -1,0 +1,1 @@
+wget -N https://raw.githubusercontent.com/Elkmar/ALQO-Masternodes/master/update.sh && chmod -f 777 update.sh && ./update.sh
