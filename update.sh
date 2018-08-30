@@ -18,7 +18,7 @@ sudo rm /home/alqo/.alqo/mncache.dat
 sudo rm /home/alqo/.alqo/mnpayments.dat
 sudo rm /home/alqo/.alqo/debug.log
 sudo wget https://github.com/ALQOCRYPTO/ALQO/releases/download/v4.1/chain_unix.tgz -O /home/alqo/.alqo/chain.tgz
-sudo tar -xvzf /home/alqo/.alqo/chain.tgz -C /home/.alqo/
+sudo tar -xvzf /home/alqo/.alqo/chain.tgz -C /home/alqo/.alqo/
 
 echo "Waiting 10 seconds before continuing"
 sleep 10
