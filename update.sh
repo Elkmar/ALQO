@@ -20,6 +20,12 @@ sudo rm /home/alqo/.alqo/debug.log
 sudo wget https://github.com/ALQOCRYPTO/ALQO/releases/download/v4.1/chain_unix.tgz -O /home/alqo/.alqo/chain.tgz
 sudo tar -xvzf /home/alqo/.alqo/chain.tgz -C /home/alqo/.alqo/
 
+sudo chown -R alqo:alqo /home/alqo/.alqo/chainstate
+sudo chown -R alqo:alqo /home/alqo/.alqo/blocks
+sudo chown -R alqo:alqo /home/alqo/.alqo/sporks
+sudo chown -R alqo:alqo /home/alqo/.alqo/zerocoin
+rm /home/alqo/.alqo/chainstate/LOCK
+
 echo "Waiting 10 seconds before continuing"
 sleep 10
 
@@ -29,4 +35,4 @@ chmod -f 777 alqod
 echo "Waiting 10 seconds before continuing"
 sleep 10
 
-./alqod -reindex
+./alqod
