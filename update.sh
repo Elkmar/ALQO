@@ -28,3 +28,5 @@ chmod -f 777 alqod
 
 echo "Waiting 10 seconds before continuing"
 sleep 10
+
+./alqod
