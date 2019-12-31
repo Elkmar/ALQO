@@ -12,6 +12,8 @@ rm ALQO-v6.3.0.0-c7fc25cad-lin64.tgz
 #run alqo client to create the conf files then stop it 
 cd ALQO-v6.3.0.0-c7fc25cad-lin64
 ./alqod -daemon
+echo "Waiting for 10 seconds..."
+sleep 10
 ./alqo-cli stop
 
 #go to conf file in order to edit
