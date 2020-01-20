@@ -1,4 +1,4 @@
-cd /alqo/ALQO-v6.3.0.0-c7fc25cad-lin64
+cd /root/alqo/ALQO-v6.3.0.0-c7fc25cad-lin64
 
 #stop the precedent version of alqo
 ./alqo-cli stop
@@ -17,5 +17,5 @@ tar xvf ALQO-v6.4.0.0-7d5f56499-lin64.tgz
 rm ALQO-v6.4.0.0-7d5f56499-lin64.tgz
 
 #run the client
-cd ALQO-v6.4.0.0-7d5f56499-lin64.tgz
+cd ALQO-v6.4.0.0-7d5f56499-lin64
 ./alqod
