@@ -3,14 +3,14 @@ mkdir alqo
 cd alqo
 
 #download ALQO version 6.3.00
-wget https://github.com/ALQO-Universe/ALQO/releases/download/v6.3.0.0-c7fc25cad/ALQO-v6.3.0.0-c7fc25cad-lin64.tgz
+wget https://github.com/ALQO-Universe/ALQO/releases/download/v6.4.0.0-7d5f56499/ALQO-v6.4.0.0-7d5f56499-lin64.tgz
 
 #extract the archive and erase the archive
-tar xvf ALQO-v6.3.0.0-c7fc25cad-lin64.tgz
-rm ALQO-v6.3.0.0-c7fc25cad-lin64.tgz
+tar xvf ALQO-v6.4.0.0-7d5f56499-lin64.tgz
+rm ALQO-v6.4.0.0-7d5f56499-lin64.tgz
 
 #run alqo client to create the conf files then stop it 
-cd ALQO-v6.3.0.0-c7fc25cad-lin64
+cd ALQO-v6.4.0.0-7d5f56499-lin64.tgz
 ./alqod -daemon
 echo "Waiting for 10 seconds..."
 sleep 10
@@ -21,5 +21,5 @@ cd /root/.alqocrypto
 nano ./alqo.conf
 
 #run the client again
-cd /root/alqo/ALQO-v6.3.0.0-c7fc25cad-lin64
+cd /root/alqo/ALQO-v6.4.0.0-7d5f56499-lin64.tgz
 ./alqod -daemon
