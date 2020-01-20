@@ -7,7 +7,7 @@ sleep 10
 
 #remove the precedent version of alqo
 cd ../
-rm ALQO-v6.3.0.0-c7fc25cad-lin64
+rm -rf ALQO-v6.3.0.0-c7fc25cad-lin64
 
 #download ALQO version 6.4.00
 wget https://github.com/ALQO-Universe/ALQO/releases/download/v6.4.0.0-7d5f56499/ALQO-v6.4.0.0-7d5f56499-lin64.tgz
