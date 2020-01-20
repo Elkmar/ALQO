@@ -1,1 +1,7 @@
+Installation on Linux with libraries already installed:
+
 wget -N https://raw.githubusercontent.com/Elkmar/ALQO-Masternodes/master/install.sh && chmod -f 777 install.sh && ./install.sh
+
+Update on Linux from a precedent version :
+
+wget -N https://raw.githubusercontent.com/Elkmar/ALQO-Masternodes/master/update.sh && chmod -f 777 update.sh && ./update.sh
