@@ -34,4 +34,5 @@ NC='\033[0m'
     mv ~/build/ALQO/src/alqod ~/ALQO
     mv ~/build/ALQO/src/alqo-cli ~/ALQO
     echo -ne "${BLUE}Starting new Wallet${NC}"
+    cd ~/ALQO
     ./alqod -daemon
