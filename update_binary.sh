@@ -5,7 +5,8 @@ GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[1;36m'
 NC='\033[0m'
-
+    
+    sudo add-apt-repository ppa:ubuntu-toolchain-r/test && apt-get update && apt-get upgrade && apt-get dist-upgrade
     echo
     echo -ne "${BLUE}Updating Wallet${NC}"
     echo
