@@ -1,8 +1,5 @@
 #correct some missing libraries
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test && apt-get update && apt-get upgrade && apt-get dist-upgrade
 
 cd /root/alqo/ALQO-v6.3.0.0-c7fc25cad-lin64
 
