@@ -1,6 +1,5 @@
 #!/bin/bash
-#wget -N https://raw.githubusercontent.com/Elkmar/ALQO-Masternodes/master/update_binary.sh && chmod -f 777 update_binary.sh && ./update.sRED='\033[1;31m'
-
+# cd ~ && wget -N https://raw.githubusercontent.com/Elkmar/ALQO-Masternodes/master/update_binary.sh -O update_binary.sh && chmod +x update_binary.sh && ./update_binary.sh
 GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[1;36m'
