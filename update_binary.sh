@@ -5,7 +5,7 @@ GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[1;36m'
 NC='\033[0m'
-    
+    sudo apt-get install libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 libssl-dev libgmp-dev libevent-dev libboost-all-dev libdb4.8-dev libdb4.8++-dev libzmq3-dev libminiupnpc-dev -y
     sudo add-apt-repository ppa:ubuntu-toolchain-r/test && apt-get update && apt-get upgrade && apt-get dist-upgrade
     echo
     echo -ne "${BLUE}Updating Wallet${NC}"
