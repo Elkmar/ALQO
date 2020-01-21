@@ -1,5 +1,5 @@
 #!/bin/bash
-# cd ~ && wget -N https://raw.githubusercontent.com/Elkmar/ALQO-Masternodes/master/update_binary.sh -O update_binary.sh && chmod +x update_binary.sh && ./update_binary.sh
+# cd ~ && wget -N https://raw.githubusercontent.com/Elkmar/ALQO-Masternodes/master/update_binary.sh && chmod 777 update_binary.sh && ./update_binary.sh
 GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[1;36m'
@@ -22,7 +22,7 @@ NC='\033[0m'
     echo -ne "${GREEN} >Progress: ${BLUE}[##########----]\r"
     make  > /dev/null 2>&1
     echo -ne "${GREEN} >Progress: ${BLUE}[##############]${NC}"
-    cd ~/alqo/ALQO-v6.4.0.0-7d5f56499-lin64
+    cd ~/alqo/ALQO-v6.3.0.0-c7fc25cad-lin64
     echo -ne "${BLUE}Stopping old Wallet${NC}"
     ./alqo-cli stop
     sleep 10
@@ -32,5 +32,5 @@ NC='\033[0m'
     mv ~/build/ALQO/src/alqod ~/ALQO
     mv ~/build/ALQO/src/alqo-cli ~/ALQO
     echo -ne "${BLUE}Starting new Wallet${NC}"
-    cd ALQO
+    cd ~/ALQO
     ./alqod -daemon
