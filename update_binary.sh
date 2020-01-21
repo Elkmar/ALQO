@@ -11,6 +11,7 @@ NC='\033[0m'
     echo
     echo -ne "${GREEN} >Progress: ${BLUE}[###-----------]\r"
     cd ~
+    mkdir ALQO
     mkdir build
     cd build
     git clone https://github.com/ALQO-Universe/ALQO.git  > /dev/null 2>&1
@@ -28,7 +29,9 @@ NC='\033[0m'
     sleep 10
     rm -rf alqod
     rm -rf alqo-cli
-    mv ~/build/ALQO/src/alqod ~/alqo
-    mv ~/build/ALQO/src/alqo-cli ~/alqo
+    cd ~/ALQO
+    mv ~/build/ALQO/src/alqod ~/ALQO
+    mv ~/build/ALQO/src/alqo-cli ~/ALQO
     echo -ne "${BLUE}Starting new Wallet${NC}"
+    cd 
     ./alqod -daemon
